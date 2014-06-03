@@ -461,7 +461,8 @@ load_changes(Owner, Updater, Group, MapQueue, ActiveParts, PassiveParts,
                                 [SetName, GroupType, Category, DDocId,
                                     case MarkerType of
                                     ?UPR_SNAPSHOT_TYPE_DISK -> "on-disk";
-                                    ?UPR_SNAPSHOT_TYPE_MEMORY -> "in-memory"
+                                    ?UPR_SNAPSHOT_TYPE_MEMORY -> "in-memory";
+                                    _ -> "unknown"
                                     end,
                                     PartId, MarkerStartSeq, MarkerEndSeq]),
                             case Count of
