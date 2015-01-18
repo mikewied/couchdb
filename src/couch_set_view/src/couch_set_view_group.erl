@@ -63,7 +63,7 @@
 
 -define(MAX_HIST_SIZE, 10).
 % flow control buffer size 20 MB
--define(DCP_CONTROL_BUFFER_SIZE, "20971520").
+-define(DCP_CONTROL_BUFFER_SIZE, "1073741824").
 
 % Seqs cache ttl in microseconds
 -define(SEQS_CACHE_TTL, 300000).
